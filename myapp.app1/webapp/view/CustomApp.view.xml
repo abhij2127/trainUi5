@@ -1,0 +1,22 @@
+<mvc:View
+    controllerName = "myapp.app1.myapp.app1.controller.Cusotm"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+>
+<Page id="page">
+    <List
+		items="{main>/Orders}"
+		headerText="Order"
+		growing="true"
+		growingThreshold="4"
+		growingScrollToLoad="false">
+		<StandardListItem
+			title="{main>OrderID}"
+			description="{main>CustomerID}"
+			icon="sap-icon://notes"
+			iconDensityAware="false"
+			iconInset="false" />
+	</List>
+    </Page>
+
+</mvc:View>
