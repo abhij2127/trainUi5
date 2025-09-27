@@ -11,6 +11,8 @@
 		growingThreshold="4"
 		growingScrollToLoad="false">
 		<StandardListItem
+            press="onPressOrder"
+            type="Active"
 			title="{main>OrderID}"
 			description="{main>CustomerID}"
 			icon="sap-icon://notes"

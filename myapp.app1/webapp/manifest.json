@@ -97,6 +97,13 @@
           "target": [
             "TargetMyCustomApp"
           ]
+        },
+        {
+          "name": "OrderDetails",
+          "pattern": "OrderDetails/{orderId}",
+          "target": [
+            "TargetOrderDetails"
+          ]
         }
       ],
       "targets": {
@@ -107,6 +114,11 @@
         "TargetMyCustomApp" : {
           "id": "CustomApp",
           "name": "CustomApp"
+        },
+        "TargetOrderDetails" : {
+          "id": "OrderDetails",
+          "name": "OrderDetails",
+          "viewLevel": 2
         }
       }
     },

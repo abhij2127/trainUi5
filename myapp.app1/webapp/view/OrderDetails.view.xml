@@ -1,0 +1,50 @@
+<mvc:View controllerName="myapp.app1.myapp.app1.controller.OrderDetails"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:uxap="sap.uxap">
+    <uxap:ObjectPageLayout>
+        <uxap:headerTitle>
+            <uxap:ObjectPageHeader
+                objectTitle="{main>OrderID}"
+                objectSubtitle="{main>CustomerID}"
+                showTitleSelector="false"
+                showMarkers="false"
+                showTitle="true"
+                showSubtitle="true"
+                showNavButton="true"
+                navButtonPress="onNavBack">
+            </uxap:ObjectPageHeader>
+        </uxap:headerTitle>
+        <uxap:sections>
+            <uxap:ObjectPageSection
+                id="orderDetailsSection"
+                title="Order Details"
+                showTitle="true"
+                showSubSectionTitle="false">
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection
+                        id="orderDetailsSubSection"
+                        title="Details"
+                        showTitle="true">
+                        <uxap:blocks>
+                            <VBox class="sapUiSmallMargin">
+                                <items>
+                                    <Text text="Order ID:" class="sapUiSmallMarginBottom"/>
+                                    <Text text="{main>OrderID}" class="sapUiSmallMarginBottom"/>
+                                    <Text text="Customer ID:" class="sapUiSmallMarginBottom"/>
+                                    <Text text="{main>CustomerID}" class="sapUiSmallMarginBottom"/>
+                                    <Text text="Employee ID:" class="sapUiSmallMarginBottom"/>
+                                    <Text text="{main>EmployeeID}" class="sapUiSmallMarginBottom"/>
+                                    <Text text="Order Date:" class="sapUiSmallMarginBottom"/>
+                                    <Text text="{main>OrderDate}" class="sapUiSmallMarginBottom"/>
+                                    <Text text="Ship City:" class="sapUiSmallMarginBottom"/>
+                                    <Text text="{main>ShipCity}" class="sapUiSmallMarginBottom"/>
+                                </items>
+                            </VBox>
+                        </uxap:blocks>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+        </uxap:sections>
+    </uxap:ObjectPageLayout>
+</mvc:View>
