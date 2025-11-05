@@ -5,14 +5,15 @@ sap.ui.define([
     "use strict";
     const MODEL_NAMES = {
         MAIN: "main",
-        DEVICE: "device"
+        DEVICE: "device",
+        I18N: "i18n"
     }
 
-    const oCustomController = {
+    const oBaseController = {
 
         onInit() {
-            // Controller.prototype.onInit.apply(this);
-            console.log("Application starts here! Have a safe journey!");
+            sap.m.MessageToast.show("Application starts here! Have a safe journey ❤️!");
+            this.oI18nModel = this._getModel(MODEL_NAMES.I18N).getResourceBundle();
             this._getRouter().attachRouteMatched(this._onRouteMatched, this);
 
         },
@@ -24,5 +25,5 @@ sap.ui.define([
             return this.getOwnerComponent().getRouter();
         }
     }
-    return Controller.extend("myapp/app1/myapp/app1/controller/BaseController", oCustomController);
+    return Controller.extend("myapp/app1/myapp/app1/controller/BaseController", oBaseController);
 }) 

@@ -68,6 +68,10 @@
         "type": "myapp.app1.myapp.app1.utils.odataLib",
         "preload": true,
         "settings": {}
+      },
+      "userModel": {
+        "type": "sap.ui.model.json.JSONModel",
+        "settings": {}
       }
     },
     "resources": {
@@ -92,10 +96,10 @@
       "routes": [
         
         {
-          "name": "myCustoApp",
+          "name": "OrderList",
           "pattern": "",
           "target": [
-            "TargetMyCustomApp"
+            "TargetOrderList"
           ]
         },
         {
@@ -107,13 +111,9 @@
         }
       ],
       "targets": {
-        "TargetmainService": {
-          "id": "mainService",
-          "name": "mainService"
-        },
-        "TargetMyCustomApp" : {
-          "id": "CustomApp",
-          "name": "CustomApp"
+        "TargetOrderList" : {
+          "id": "OrderList",
+          "name": "OrderList"
         },
         "TargetOrderDetails" : {
           "id": "OrderDetails",
@@ -123,7 +123,7 @@
       }
     },
     "rootView": {
-      "viewName": "myapp.app1.myapp.app1.view.App",
+      "viewName": "myapp.app1.myapp.app1.view.OrderList",
       "type": "XML",
       "id": "App",
       "async": true

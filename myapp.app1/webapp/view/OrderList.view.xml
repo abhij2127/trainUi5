@@ -1,8 +1,9 @@
 <mvc:View
-    controllerName = "myapp.app1.myapp.app1.controller.Cusotm"
+    controllerName = "myapp.app1.myapp.app1.controller.OrderList"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
 >
+<App id='app'>
 <Page id="page">
     <List
 		items="{main>/Orders}"
@@ -20,5 +21,6 @@
 			iconInset="false" />
 	</List>
     </Page>
+	</App>
 
 </mvc:View>

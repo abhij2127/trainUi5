@@ -16,7 +16,7 @@ sap.ui.define([
         },
         _onRouteMatched(oEvent) {
             const { name } = oEvent.getParameters();
-            if (name === "myCustoApp") {
+            if (name === "OrderList") {
                 console.log("My Custom App is now loaded");
                 const sPath = this._getModel(MODEL_NAMES.MAIN).createOrderPath(10284);
                 
@@ -30,5 +30,5 @@ sap.ui.define([
             });
         }
     }
-    return Controller.extend("myapp.app1.myapp.app1.controller.Custom", oCustomController);
+    return Controller.extend("myapp.app1.myapp.app1.controller.OrderList", oCustomController);
 }) 
